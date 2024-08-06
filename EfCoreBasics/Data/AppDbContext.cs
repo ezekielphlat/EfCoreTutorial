@@ -12,6 +12,7 @@ namespace EfCoreBasics.Data
     {
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Manager> Managers { get; set; }
+        public DbSet<Project> Projects { get; set; }
         public DbSet<EmployeeDetails> EmployeeDetails { get; set; }
         public DbSet<EmployeeProject> EmployeeProject { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
